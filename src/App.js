@@ -14,8 +14,7 @@ const App=()=> {
     useEffect(()=>{
       setisLoading(true)
         const proxyurl = "https://cors-anywhere.herokuapp.com/";
-      /*  const fetchItems=async()=>{
-            const res=await axios(proxyurl+`https://officeapi.dev/api/quotes/`)*/
+      
             axios.get(proxyurl+`https://officeapi.dev/api/quotes/`)
             .then(res=>{
             console.log(res.data.data)
